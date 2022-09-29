@@ -1,13 +1,23 @@
 <h1>Welcome to {{title}}</h1>
 
-<p>There are {{names.length}} people present</p>
 
-<div *ngFor = "let n of menuItems; index as i" >
-  <div>{{n.item}} {{n.category}} {{n.price}}</div> 
+<div>
+  <table>
+  <tr>
+    <th *ngFor="let h of headers">
+      {{h}}
+    </th>
+  </tr>
 
+  <tr>
+    <td *ngFor = "let n of menuItems;">
 
+    </td>
+  </tr>
+  <tr *ngFor = "let n of menuItems; index as i" >
+    <td>{{n.item}}</td>
+    <td>{{n.category}}</td>
+    <td>{{n.price}}</td>
+  </tr>
+</table>
 </div>
-
-<p *ngIf="isHungry">
-  You are hungry
-</p> 

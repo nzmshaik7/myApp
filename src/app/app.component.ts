@@ -7,7 +7,7 @@ import { MenuItem } from './menu_item';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myApp sd';
+  title = 'Chirpus Pizza!';
   names: string[] = ['Fred', 'Julie', 'Sam', 'Olivia'];
   isHungry: boolean = true;
 
@@ -50,6 +50,6 @@ export class AppComponent {
   menuItems: MenuItem[] = [this.itemOne, this.itemTwo, this.itemThree,
       this.itemFour, this.itemFive, this.itemSix
       ];
-  
+  headers: string[] = ['Item', 'Category', 'Price']
 
 }
