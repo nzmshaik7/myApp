@@ -2,8 +2,8 @@
 
 <p>There are {{names.length}} people present</p>
 
-<div *ngFor = "let n of names; index as i" >
-  <div>{{n}} {{i}}</div> 
+<div *ngFor = "let n of menuItems; index as i" >
+  <div>{{n.item}} {{n.category}} {{n.price}}</div> 
 
 
 </div>
